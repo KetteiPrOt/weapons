@@ -1,0 +1,10 @@
+.titulo {
+	background: rgba(255,255,255,.6);
+	border-radius: 5px;
+	display: inline;
+}
+
+.texto-blanco {
+	background: rgba(255,255,255,.6);
+	border-radius: 5px;
+}

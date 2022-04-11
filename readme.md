@@ -16,5 +16,40 @@ Para darle uso practico al formulario de buscar tendria que saber sobre base de 
 
 Con estas especificaciones concluye la primera version (1.1) de la barra de navegacion
 
+# Planificacion de completar
 
-*sacar canias de la casa de la gabi para hacer espadas*
+Siguiente paso es completar la primera pagina, rellenar todos los datos como copywriter y consegir las nuevas imagenes
+
+Tambien modificar los ids para que sean individuales
+
+# Hacer las funciones individuales
+<div id="acordion_1">
+<h2 id="cabecera_1">
+<button	data-bs-target="#contenido_1" aria-controls="contenido_1">
+<div id="contenido_1" aria-labelledby="cabecera_1" data-bs-parent="acordion_1">
+
+# Consegir las demas categorias
+- SMG
+UMP 45
+Thompsom
+Uzi
+Vector
+PP-19 Bizon
+MP-5K
+MP-40
+SIG MPX
+P90
+
+- SG
+Regminton 870
+
+-RF
+SKS
+M200
+
+
+
+# Probar crear una ventana emergente con una imagen completa
+
+# Probar incluir varias imagenes
+

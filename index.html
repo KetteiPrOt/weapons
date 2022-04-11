@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="sand-stone/bootstrap.min.css">
 	<script src="sand-stone/bootstrap.bundle.min.js" defer></script>
 	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
 </head>
 <body>
 	
@@ -86,18 +87,37 @@
 				<div class="carousel slide carousel-dark border border-secondary" id="mi-carousel2" data-bs-ride="carousel">
 					<div class="carousel-inner">
 						<div class="carousel-item active p-2">
-							<div class="carousel-caption">
-								<h5>Titulo del articulo</h5>
-								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, pariatur veniam laudantium quidem qui!</p>
+							<!-- Descripcion -->
+							<div class="carousel-caption d-none d-md-block">
+								<h5 class="titulo">Rifles de asalto (AR)</h5>
+								<p class="texto-blanco">Los rifles de asalto son el arma de infantería estándar en la mayoría de los ejércitos modernos y han reemplazado o complementado ampliamente a los más grandes y potentes fusiles de batalla.</p>
 							</div>
 							<img class="d-block w-100" src="img/ar/ak-12.jpg" alt="">
 						</div>
 						<div class="carousel-item p-2">
-							<img class="d-block w-100" src="img/ar/ak-47.jpg" alt="">
+							<!-- Descripcion -->
+							<div class="carousel-caption d-none d-md-block">
+								<h5 class="titulo">Escopetas (SG)</h5>
+								<p class="texto-blanco">Las escopetas, en combate, al disparar proyectiles múltiples, es decir, una "nube" de perdigones a la vez con cada disparo, permiten acertar con facilidad a corta distancia, aunque sea con parte de los perdigones, siendo un impacto de lleno demoledor. </p>
+							</div>
+							<img class="d-block w-100" src="img/sg/remington870.jpg" alt="">
 						</div>
 						<div class="carousel-item p-2">
-							<img class="d-block w-100" src="img/ar/m16.jpg" alt="">
-						</div>						
+							<!-- Descripcion -->
+							<div class="carousel-caption d-none d-md-block">
+								<h5 class="titulo">Fusil (RF)</h5>
+								<p class="texto-blanco">El fusil de combate es de mayor calibre y alcance que el fusil de asalto. Y por lo tanto, más adecuado para disparos de cierto alcance, considerándose eficaces a 700 metros o más. Sin embargo, no suele ser apto para tiro en ráfagas debido a la dificultad que su calibre a la hora de controlar el arma.</p>
+							</div>
+							<img class="d-block w-100" src="img/rf/m200.jpg" alt="">
+						</div>
+						<div class="carousel-item p-2">
+							<!-- Descripcion -->
+							<div class="carousel-caption d-none d-md-block">
+								<h5 class="titulo">Metralladoras (SMG)</h5>
+								<p class="texto-blanco">La metralleta o subfusil es una carabina automática diseñada para disparar munición de pistola pensada para proporcionar gran cadencia de fuego en distancias cortas y espacios cerrados</p>
+							</div>
+							<img class="d-block w-100" src="img/smg/ump-45.jpg" alt="">
+						</div>							
 					</div>
 					<!-- Controles izq -->
 					<button 
@@ -144,6 +164,12 @@
 						data-bs-slide-to="2"
 						aria-label="Slide 3"
 						></button>
+						<button 
+						type="button" 
+						data-bs-target="#mi-carousel2"
+						data-bs-slide-to="3"
+						aria-label="Slide 4"
+						></button>
 					</div>
 				</div>
 			</div>
@@ -154,27 +180,40 @@
 	<main class="container">
 
 		<div class="row mb-3">
-			<div class="col-4">
+			<div class="col-12">
+				<h3 class="text-center">Assault Rifle</h3>
+				<hr>
+			</div>
+		</div>
+
+		<div class="row mb-3">
+			<div class="col-12 col-sm-6 col-md-4">
 				<!-- Banner de arma -->
 				<div class="card">
 					<div class="p-3">
 						<img class="card-img-top" src="img/ar/ak-12.jpg">						
 					</div>
 					<!-- Acordion -->
-					<div class="accordion mb-3" id="accordionExample">
+					<div class="accordion mb-3">
 					  	<div class="accordion-item">
 					  		<!-- Titulo -->
-					    	<h2 class="accordion-header" id="headingOne">
-					      		<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-					        		Accordion Item #1
+					    	<h2 class="accordion-header" >
+					      		<button 
+					      			class="accordion-button collapsed" 
+					      			type="button" 
+					      			data-bs-toggle="collapse" 
+					      			data-bs-target="#contenido_0" 
+					      			aria-expanded="false" 
+					      			aria-controls="contenido_0"
+					      		>
+					        		AK-12
 					      		</button>
 					    	</h2>
 					    	<!-- Contenido -->
-					    	<div 
-					    		id="collapseOne" 
+					    	<div  
 					    		class="accordion-collapse collapse" 
-					    		aria-labelledby="headingOne" 
-					    		data-bs-parent="#accordionExample"
+					    		aria-labelledby="cabecera_0" 
+					    		data-bs-parent="#acordion_0"
 					    	>
 					      		<div class="accordion-body">
 					        		<!-- Card -->
@@ -202,27 +241,33 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-4">
+			<div class="col-12 col-sm-6 col-md-4">
 				<!-- Banner de arma -->
 				<div class="card">
 					<div class="p-3">
-						<img class="card-img-top" src="img/ar/ak-12.jpg">						
+						<img class="card-img-top" src="img/ar/ak-47.jpg">						
 					</div>
 					<!-- Acordion -->
-					<div class="accordion mb-3" id="accordionExample">
+					<div class="accordion mb-3">
 					  	<div class="accordion-item">
 					  		<!-- Titulo -->
-					    	<h2 class="accordion-header" id="headingOne">
-					      		<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-					        		Accordion Item #1
+					    	<h2 class="accordion-header" >
+					      		<button 
+					      			class="accordion-button collapsed" 
+					      			type="button" 
+					      			data-bs-toggle="collapse" 
+					      			data-bs-target="#contenido_1" 
+					      			aria-expanded="false" 
+					      			aria-controls="contenido_1"
+					      		>
+					        		AK-47
 					      		</button>
 					    	</h2>
 					    	<!-- Contenido -->
-					    	<div 
-					    		id="collapseOne" 
+					    	<div  
 					    		class="accordion-collapse collapse" 
-					    		aria-labelledby="headingOne" 
-					    		data-bs-parent="#accordionExample"
+					    		aria-labelledby="cabecera_1" 
+					    		data-bs-parent="#acordion_1"
 					    	>
 					      		<div class="accordion-body">
 					        		<!-- Card -->
@@ -250,27 +295,33 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-4">
+			<div class="col-12 col-md-4">
 				<!-- Banner de arma -->
 				<div class="card">
 					<div class="p-3">
-						<img class="card-img-top" src="img/ar/ak-12.jpg">						
+						<img class="card-img-top" src="img/ar/aug-a1.jpg">						
 					</div>
 					<!-- Acordion -->
-					<div class="accordion mb-3" id="accordionExample">
+					<div class="accordion mb-3">
 					  	<div class="accordion-item">
 					  		<!-- Titulo -->
-					    	<h2 class="accordion-header" id="headingOne">
-					      		<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-					        		Accordion Item #1
+					    	<h2 class="accordion-header" >
+					      		<button 
+					      			class="accordion-button collapsed" 
+					      			type="button" 
+					      			data-bs-toggle="collapse" 
+					      			data-bs-target="#contenido_2" 
+					      			aria-expanded="false" 
+					      			aria-controls="contenido_2"
+					      		>
+					        		AUG-A1
 					      		</button>
 					    	</h2>
 					    	<!-- Contenido -->
-					    	<div 
-					    		id="collapseOne" 
+					    	<div  
 					    		class="accordion-collapse collapse" 
-					    		aria-labelledby="headingOne" 
-					    		data-bs-parent="#accordionExample"
+					    		aria-labelledby="cabecera_2" 
+					    		data-bs-parent="#acordion_2"
 					    	>
 					      		<div class="accordion-body">
 					        		<!-- Card -->
@@ -301,27 +352,33 @@
 		</div>
 
 		<div class="row mb-3">
-			<div class="col-4">
+			<div class="col-12 col-sm-6 col-md-4">
 				<!-- Banner de arma -->
 				<div class="card">
 					<div class="p-3">
-						<img class="card-img-top" src="img/ar/ak-12.jpg">						
+						<img class="card-img-top" src="img/ar/groza.jpg">						
 					</div>
 					<!-- Acordion -->
-					<div class="accordion mb-3" id="accordionExample">
+					<div class="accordion mb-3">
 					  	<div class="accordion-item">
 					  		<!-- Titulo -->
-					    	<h2 class="accordion-header" id="headingOne">
-					      		<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-					        		Accordion Item #1
+					    	<h2 class="accordion-header" >
+					      		<button 
+					      			class="accordion-button collapsed" 
+					      			type="button" 
+					      			data-bs-toggle="collapse" 
+					      			data-bs-target="#contenido_3" 
+					      			aria-expanded="false" 
+					      			aria-controls="contenido_3"
+					      		>
+					        		Groza
 					      		</button>
 					    	</h2>
 					    	<!-- Contenido -->
-					    	<div 
-					    		id="collapseOne" 
+					    	<div  
 					    		class="accordion-collapse collapse" 
-					    		aria-labelledby="headingOne" 
-					    		data-bs-parent="#accordionExample"
+					    		aria-labelledby="cabecera_3" 
+					    		data-bs-parent="#acordion_3"
 					    	>
 					      		<div class="accordion-body">
 					        		<!-- Card -->
@@ -349,27 +406,33 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-4">
+			<div class="col-12 col-sm-6 col-md-4">
 				<!-- Banner de arma -->
 				<div class="card">
 					<div class="p-3">
-						<img class="card-img-top" src="img/ar/ak-12.jpg">						
+						<img class="card-img-top" src="img/ar/m4a1.jpg">						
 					</div>
 					<!-- Acordion -->
-					<div class="accordion mb-3" id="accordionExample">
+					<div class="accordion mb-3">
 					  	<div class="accordion-item">
 					  		<!-- Titulo -->
-					    	<h2 class="accordion-header" id="headingOne">
-					      		<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-					        		Accordion Item #1
+					    	<h2 class="accordion-header" >
+					      		<button 
+					      			class="accordion-button collapsed" 
+					      			type="button" 
+					      			data-bs-toggle="collapse" 
+					      			data-bs-target="#contenido_4" 
+					      			aria-expanded="false" 
+					      			aria-controls="contenido_4"
+					      		>
+					        		M4A1
 					      		</button>
 					    	</h2>
 					    	<!-- Contenido -->
-					    	<div 
-					    		id="collapseOne" 
+					    	<div  
 					    		class="accordion-collapse collapse" 
-					    		aria-labelledby="headingOne" 
-					    		data-bs-parent="#accordionExample"
+					    		aria-labelledby="cabecera_4" 
+					    		data-bs-parent="#acordion_4"
 					    	>
 					      		<div class="accordion-body">
 					        		<!-- Card -->
@@ -397,27 +460,33 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-4">
+			<div class="col-12 col-md-4">
 				<!-- Banner de arma -->
 				<div class="card">
 					<div class="p-3">
-						<img class="card-img-top" src="img/ar/ak-12.jpg">						
+						<img class="card-img-top" src="img/ar/m16.jpg">						
 					</div>
 					<!-- Acordion -->
-					<div class="accordion mb-3" id="accordionExample">
+					<div class="accordion mb-3">
 					  	<div class="accordion-item">
 					  		<!-- Titulo -->
-					    	<h2 class="accordion-header" id="headingOne">
-					      		<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-					        		Accordion Item #1
+					    	<h2 class="accordion-header" >
+					      		<button 
+					      			class="accordion-button collapsed" 
+					      			type="button" 
+					      			data-bs-toggle="collapse" 
+					      			data-bs-target="#contenido_5" 
+					      			aria-expanded="false" 
+					      			aria-controls="contenido_5"
+					      		>
+					        		M16
 					      		</button>
 					    	</h2>
 					    	<!-- Contenido -->
-					    	<div 
-					    		id="collapseOne" 
+					    	<div  
 					    		class="accordion-collapse collapse" 
-					    		aria-labelledby="headingOne" 
-					    		data-bs-parent="#accordionExample"
+					    		aria-labelledby="cabecera_5" 
+					    		data-bs-parent="#acordion_5"
 					    	>
 					      		<div class="accordion-body">
 					        		<!-- Card -->
@@ -448,27 +517,33 @@
 		</div>
 
 		<div class="row mb-3">
-			<div class="col-4">
+			<div class="col-12 col-sm-6 col-md-4">
 				<!-- Banner de arma -->
 				<div class="card">
 					<div class="p-3">
-						<img class="card-img-top" src="img/ar/ak-12.jpg">						
+						<img class="card-img-top" src="img/ar/m762.jpg">						
 					</div>
 					<!-- Acordion -->
-					<div class="accordion mb-3" id="accordionExample">
+					<div class="accordion mb-3">
 					  	<div class="accordion-item">
 					  		<!-- Titulo -->
-					    	<h2 class="accordion-header" id="headingOne">
-					      		<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-					        		Accordion Item #1
+					    	<h2 class="accordion-header" >
+					      		<button 
+					      			class="accordion-button collapsed" 
+					      			type="button" 
+					      			data-bs-toggle="collapse" 
+					      			data-bs-target="#contenido_6" 
+					      			aria-expanded="false" 
+					      			aria-controls="contenido_6"
+					      		>
+					        		M762
 					      		</button>
 					    	</h2>
 					    	<!-- Contenido -->
-					    	<div 
-					    		id="collapseOne" 
+					    	<div  
 					    		class="accordion-collapse collapse" 
-					    		aria-labelledby="headingOne" 
-					    		data-bs-parent="#accordionExample"
+					    		aria-labelledby="cabecera_6" 
+					    		data-bs-parent="#acordion_6"
 					    	>
 					      		<div class="accordion-body">
 					        		<!-- Card -->
@@ -496,27 +571,33 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-4">
+			<div class="col-12 col-sm-6 col-md-4">
 				<!-- Banner de arma -->
 				<div class="card">
 					<div class="p-3">
-						<img class="card-img-top" src="img/ar/ak-12.jpg">						
+						<img class="card-img-top" src="img/ar/qbz95.jpg">						
 					</div>
 					<!-- Acordion -->
-					<div class="accordion mb-3" id="accordionExample">
+					<div class="accordion mb-3">
 					  	<div class="accordion-item">
 					  		<!-- Titulo -->
-					    	<h2 class="accordion-header" id="headingOne">
-					      		<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-					        		Accordion Item #1
+					    	<h2 class="accordion-header" >
+					      		<button 
+					      			class="accordion-button collapsed" 
+					      			type="button" 
+					      			data-bs-toggle="collapse" 
+					      			data-bs-target="#contenido_7" 
+					      			aria-expanded="false" 
+					      			aria-controls="contenido_7"
+					      		>
+					        		QBZ95
 					      		</button>
 					    	</h2>
 					    	<!-- Contenido -->
-					    	<div 
-					    		id="collapseOne" 
+					    	<div  
 					    		class="accordion-collapse collapse" 
-					    		aria-labelledby="headingOne" 
-					    		data-bs-parent="#accordionExample"
+					    		aria-labelledby="cabecera_7" 
+					    		data-bs-parent="#acordion_7"
 					    	>
 					      		<div class="accordion-body">
 					        		<!-- Card -->
@@ -544,27 +625,33 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-4">
+			<div class="col-12 col-md-4">
 				<!-- Banner de arma -->
 				<div class="card">
 					<div class="p-3">
-						<img class="card-img-top" src="img/ar/ak-12.jpg">						
+						<img class="card-img-top" src="img/ar/scar-fn.jpg">						
 					</div>
 					<!-- Acordion -->
-					<div class="accordion mb-3" id="accordionExample">
+					<div class="accordion mb-3">
 					  	<div class="accordion-item">
 					  		<!-- Titulo -->
-					    	<h2 class="accordion-header" id="headingOne">
-					      		<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-					        		Accordion Item #1
+					    	<h2 class="accordion-header" >
+					      		<button 
+					      			class="accordion-button collapsed" 
+					      			type="button" 
+					      			data-bs-toggle="collapse" 
+					      			data-bs-target="#contenido_8" 
+					      			aria-expanded="false" 
+					      			aria-controls="contenido_8"
+					      		>
+					        		SCAR-FN
 					      		</button>
 					    	</h2>
 					    	<!-- Contenido -->
-					    	<div 
-					    		id="collapseOne" 
+					    	<div  
 					    		class="accordion-collapse collapse" 
-					    		aria-labelledby="headingOne" 
-					    		data-bs-parent="#accordionExample"
+					    		aria-labelledby="cabecera_8" 
+					    		data-bs-parent="#acordion_8"
 					    	>
 					      		<div class="accordion-body">
 					        		<!-- Card -->
@@ -600,7 +687,7 @@
 		<!-- Nota Importante: Las filas ya trabajan con flexbox por defecto -->
 		<div class="row border-top py-5 justify-content-between">
 			<div class="col-auto">
-				<h3 class="lead">FalconMasters.com</h3>
+				<h3 class="lead ms-2">Joel Mero</h3>
 				<a href="#" class="btn btn-link">Acerca de</a>
 				<a href="#" class="btn btn-link">Contacto</a>
 			</div>
