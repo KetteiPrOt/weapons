@@ -50,6 +50,3 @@ M200
 
 
 # Probar crear una ventana emergente con una imagen completa
-
-# Probar incluir varias imagenes
-
