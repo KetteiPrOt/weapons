@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Rifles de asalto</title>
+	<title>Ametralladoras</title>
 	<link  rel="icon" href="img/icon.png" type="image/png" />
 	<link rel="stylesheet" href="sand-stone/bootstrap.min.css">
 	<script src="sand-stone/bootstrap.bundle.min.js" defer></script>
@@ -35,13 +35,13 @@
 				    	<!-- Contenido del navbar -->
 					    <div class="collapse navbar-collapse" id="navbarColor01">
 						    <ul class="navbar-nav me-auto">
-						        <li class="nav-item active me-2">
-						          	<a class="nav-link active" href="index.html">Assault Rifle
-						            	<span class="visually-hidden">(current)</span>
-						          	</a>
+						        <li class="nav-item me-2">
+						          	<a class="nav-link" href="index.html">Assault Rifle</a>
 						        </li>
 						        <li class="nav-item me-2">
-						          	<a class="nav-link" href="smg.html">Sub Machine Gun</a>
+						          	<a class="nav-link active" href="smg.html">Sub Machine Gun
+						            	<span class="visually-hidden">(current)</span>
+						          	</a>
 						        </li>
 						        <li class="nav-item me-2">
 						          	<a class="nav-link" href="#">Shot Gun</a>
@@ -89,6 +89,14 @@
 					<div class="carousel-inner">
 						<div class="carousel-item active p-2">
 							<!-- Descripcion -->
+							<div class="carousel-caption d-none d-lg-block ajustar-descripcion reducir-ancho">
+								<h5 class="titulo">Metralladoras (SMG)</h5>
+								<p class="texto-blanco">La metralleta o subfusil es una carabina automática diseñada para disparar munición de pistola pensada para proporcionar gran cadencia de fuego en distancias cortas y espacios cerrados.</p>
+							</div>
+							<img class="d-block w-100" src="img/smg/ump-45.jpg" alt="">
+						</div>		
+						<div class="carousel-item p-2">
+							<!-- Descripcion -->
 							<div class="carousel-caption d-none d-lg-block ajustar-descripcion">
 								<h5 class="titulo">Rifles de asalto (AR)</h5>
 								<p class="texto-blanco">Los rifles de asalto son el arma de infantería estándar en la mayoría de los ejércitos modernos y han reemplazado o complementado ampliamente a los más grandes y potentes fusiles de batalla.</p>
@@ -110,15 +118,7 @@
 								<p class="texto-blanco">El fusil de combate es de mayor calibre y alcance que el fusil de asalto. Más adecuado para disparos de cierto alcance, considerándose eficaces a 700 metros o más.</p>
 							</div>
 							<img class="d-block w-100" src="img/rf/m200.jpg" alt="">
-						</div>
-						<div class="carousel-item p-2">
-							<!-- Descripcion -->
-							<div class="carousel-caption d-none d-lg-block ajustar-descripcion reducir-ancho">
-								<h5 class="titulo">Metralladoras (SMG)</h5>
-								<p class="texto-blanco">La metralleta o subfusil es una carabina automática diseñada para disparar munición de pistola pensada para proporcionar gran cadencia de fuego en distancias cortas y espacios cerrados.</p>
-							</div>
-							<img class="d-block w-100" src="img/smg/ump-45.jpg" alt="">
-						</div>							
+						</div>					
 					</div>
 					<!-- Controles izq -->
 					<button 
@@ -182,7 +182,7 @@
 
 		<div class="row mb-3">
 			<div class="col-12">
-				<h2 class="text-center">Assault Rifle</h2>
+				<h2 class="text-center">Sub Machine Gun</h2>
 				<hr>
 			</div>
 		</div>
@@ -194,7 +194,7 @@
 					<div class="p-3">
 						<img 
 						class="card-img-top" 
-						src="img/ar/ak-12.jpg"
+						src="img/smg/ump-45a.jpg"
 						data-bs-toggle="modal" 
 						data-bs-target="#mimodal_1"
 						>
@@ -269,7 +269,7 @@
 					      			aria-expanded="false" 
 					      			aria-controls="contenido_0"
 					      		>
-					        		<h3 class="text">AK-12</h3>
+					        		<h3 class="text">UMP-45</h3>
 					      		</button>
 					    	</h2>
 					    	<!-- Contenido -->
@@ -310,7 +310,7 @@
 					<div class="p-3">
 						<img 
 						class="card-img-top" 
-						src="img/ar/ak-47.jpg"
+						src="img/smg/mp-40.jpg"
 						data-bs-toggle="modal" 
 						data-bs-target="#mimodal_2"
 						>
@@ -385,7 +385,7 @@
 					      			aria-expanded="false" 
 					      			aria-controls="contenido_1"
 					      		>
-					        		<h3 class="text">AK-47</h3>
+					        		<h3 class="text">MP-40</h3>
 					      		</button>
 					    	</h2>
 					    	<!-- Contenido -->
@@ -424,7 +424,7 @@
 				<!-- Banner de arma -->
 				<div class="card">
 					<div class="p-3">
-						<img class="card-img-top" src="img/ar/aug-a1.jpg">						
+						<img class="card-img-top" src="img/smg/vector.jpg">						
 					</div>
 					<!-- Acordion -->
 					<div class="accordion mb-3">
@@ -439,7 +439,7 @@
 					      			aria-expanded="false" 
 					      			aria-controls="contenido_2"
 					      		>
-					        		<h3 class="text">AUG-A1</h3>
+					        		<h3 class="text">VECTOR</h3>
 					      		</button>
 					    	</h2>
 					    	<!-- Contenido -->
@@ -481,7 +481,7 @@
 				<!-- Banner de arma -->
 				<div class="card">
 					<div class="p-3">
-						<img class="card-img-top" src="img/ar/groza.jpg">						
+						<img class="card-img-top" src="img/smg/p90.jpg">						
 					</div>
 					<!-- Acordion -->
 					<div class="accordion mb-3">
@@ -496,7 +496,7 @@
 					      			aria-expanded="false" 
 					      			aria-controls="contenido_3"
 					      		>
-					        		<h3 class="text">Groza</h3>
+					        		<h3 class="text">P90</h3>
 					      		</button>
 					    	</h2>
 					    	<!-- Contenido -->
@@ -535,7 +535,7 @@
 				<!-- Banner de arma -->
 				<div class="card">
 					<div class="p-3">
-						<img class="card-img-top" src="img/ar/m4a1.jpg">						
+						<img class="card-img-top" src="img/smg/thompson.jpg">						
 					</div>
 					<!-- Acordion -->
 					<div class="accordion mb-3">
@@ -550,7 +550,7 @@
 					      			aria-expanded="false" 
 					      			aria-controls="contenido_4"
 					      		>
-					        		<h3 class="text">M4A1</h3>
+					        		<h3 class="text">Thompson</h3>
 					      		</button>
 					    	</h2>
 					    	<!-- Contenido -->
@@ -589,7 +589,7 @@
 				<!-- Banner de arma -->
 				<div class="card">
 					<div class="p-3">
-						<img class="card-img-top" src="img/ar/m16.jpg">						
+						<img class="card-img-top" src="img/smg/uzi.jpg">						
 					</div>
 					<!-- Acordion -->
 					<div class="accordion mb-3">
@@ -604,7 +604,7 @@
 					      			aria-expanded="false" 
 					      			aria-controls="contenido_5"
 					      		>
-					        		<h3 class="text">M16</h3>
+					        		<h3 class="text">UZI</h3>
 					      		</button>
 					    	</h2>
 					    	<!-- Contenido -->
@@ -646,7 +646,7 @@
 				<!-- Banner de arma -->
 				<div class="card">
 					<div class="p-3">
-						<img class="card-img-top" src="img/ar/m762.jpg">						
+						<img class="card-img-top" src="img/smg/mp5.jpg">						
 					</div>
 					<!-- Acordion -->
 					<div class="accordion mb-3">
@@ -661,7 +661,7 @@
 					      			aria-expanded="false" 
 					      			aria-controls="contenido_6"
 					      		>
-					        		<h3 class="text">M762</h3>
+					        		<h3 class="text">MP5</h3>
 					      		</button>
 					    	</h2>
 					    	<!-- Contenido -->
@@ -700,7 +700,7 @@
 				<!-- Banner de arma -->
 				<div class="card">
 					<div class="p-3">
-						<img class="card-img-top" src="img/ar/qbz95.jpg">						
+						<img class="card-img-top" src="img/smg/pp-19-bizon.jpg">						
 					</div>
 					<!-- Acordion -->
 					<div class="accordion mb-3">
@@ -715,7 +715,7 @@
 					      			aria-expanded="false" 
 					      			aria-controls="contenido_7"
 					      		>
-					        		<h3 class="text">QBZ95</h3>
+					        		<h3 class="text">PP-19 Bizon</h3>
 					      		</button>
 					    	</h2>
 					    	<!-- Contenido -->
@@ -754,7 +754,7 @@
 				<!-- Banner de arma -->
 				<div class="card">
 					<div class="p-3">
-						<img class="card-img-top" src="img/ar/scar-fn.jpg">						
+						<img class="card-img-top" src="img/smg/mp-5k.jpg">						
 					</div>
 					<!-- Acordion -->
 					<div class="accordion mb-3">
@@ -769,7 +769,7 @@
 					      			aria-expanded="false" 
 					      			aria-controls="contenido_8"
 					      		>
-					        		<h3 class="text">SCAR-FN</h3>
+					        		<h3 class="text">MP-5K</h3>
 					      		</button>
 					    	</h2>
 					    	<!-- Contenido -->
