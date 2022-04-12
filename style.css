@@ -13,5 +13,15 @@
 	width: 100%;
 }
 
+.ajustar-descripcion {
+	width: 40%;
+	left: 58%;
+	right: 0%;
+	bottom: 5%;
+}
 
-	
+.reducir-ancho {
+	width: 33%;
+	left: 65%;
+	bottom: 0%;
+}

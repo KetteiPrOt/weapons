@@ -88,7 +88,7 @@
 					<div class="carousel-inner">
 						<div class="carousel-item active p-2">
 							<!-- Descripcion -->
-							<div class="carousel-caption d-none d-md-block">
+							<div class="carousel-caption d-none d-lg-block ajustar-descripcion">
 								<h5 class="titulo">Rifles de asalto (AR)</h5>
 								<p class="texto-blanco">Los rifles de asalto son el arma de infantería estándar en la mayoría de los ejércitos modernos y han reemplazado o complementado ampliamente a los más grandes y potentes fusiles de batalla.</p>
 							</div>
@@ -96,7 +96,7 @@
 						</div>
 						<div class="carousel-item p-2">
 							<!-- Descripcion -->
-							<div class="carousel-caption d-none d-md-block">
+							<div class="carousel-caption d-none d-lg-block">
 								<h5 class="titulo">Escopetas (SG)</h5>
 								<p class="texto-blanco">Las escopetas, en combate, al disparar proyectiles múltiples, es decir, una "nube" de perdigones a la vez con cada disparo, permiten acertar con facilidad a corta distancia, aunque sea con parte de los perdigones, siendo un impacto de lleno demoledor. </p>
 							</div>
@@ -104,17 +104,17 @@
 						</div>
 						<div class="carousel-item p-2">
 							<!-- Descripcion -->
-							<div class="carousel-caption d-none d-md-block">
+							<div class="carousel-caption d-none d-lg-block ajustar-descripcion reducir-ancho">
 								<h5 class="titulo">Fusil (RF)</h5>
-								<p class="texto-blanco">El fusil de combate es de mayor calibre y alcance que el fusil de asalto. Y por lo tanto, más adecuado para disparos de cierto alcance, considerándose eficaces a 700 metros o más. Sin embargo, no suele ser apto para tiro en ráfagas debido a la dificultad que su calibre a la hora de controlar el arma.</p>
+								<p class="texto-blanco">El fusil de combate es de mayor calibre y alcance que el fusil de asalto. Más adecuado para disparos de cierto alcance, considerándose eficaces a 700 metros o más.</p>
 							</div>
 							<img class="d-block w-100" src="img/rf/m200.jpg" alt="">
 						</div>
 						<div class="carousel-item p-2">
 							<!-- Descripcion -->
-							<div class="carousel-caption d-none d-md-block">
+							<div class="carousel-caption d-none d-lg-block ajustar-descripcion reducir-ancho">
 								<h5 class="titulo">Metralladoras (SMG)</h5>
-								<p class="texto-blanco">La metralleta o subfusil es una carabina automática diseñada para disparar munición de pistola pensada para proporcionar gran cadencia de fuego en distancias cortas y espacios cerrados</p>
+								<p class="texto-blanco">La metralleta o subfusil es una carabina automática diseñada para disparar munición de pistola pensada para proporcionar gran cadencia de fuego en distancias cortas y espacios cerrados.</p>
 							</div>
 							<img class="d-block w-100" src="img/smg/ump-45.jpg" alt="">
 						</div>							
@@ -195,12 +195,12 @@
 						class="card-img-top" 
 						src="img/ar/ak-12.jpg"
 						data-bs-toggle="modal" 
-						data-bs-target="#mimodal-1"
+						data-bs-target="#mimodal_1"
 						>
-						<!-- Fondo -->
+						<!-- Fondo Modal -->
 						<div 
 						class="modal fade" 
-						id="mimodal-1" 
+						id="mimodal_1" 
 						tabindex="-1" 
 						aria-hidden="true" 
 						aria-labelledby="label-modal-1">
@@ -209,7 +209,47 @@
 								<!-- Contenido -->
 								<div class="modal-content">
 									<div class="modal-body">
-									    <img class="ajustar-imagen-modal" src="img/ar/ak-12.jpg">
+										<!-- Carusel de imagenes -->
+										<div class="carousel slide carousel-dark border border-secondary" id="imagenes_1" data-bs-ride="carousel">
+											<div class="carousel-inner">
+												<div class="carousel-item active p-2">
+													<img class="d-block w-100" src="img/ar/ak-12/ak-12a.jpg" alt="">
+												</div>	
+												<div class="carousel-item p-2">
+													<img class="d-block w-100" src="img/ar/ak-12/ak-12b.jpg" alt="">
+												</div>	
+												<div class="carousel-item p-2">
+													<img class="d-block w-100" src="img/ar/ak-12/ak-12c.jpg" alt="">
+												</div>
+												<div class="carousel-item p-2">
+													<img class="d-block w-100" src="img/ar/ak-12/ak-12d.jpg" alt="">
+												</div>					
+											</div>
+											<!-- Controles izq -->
+											<button 
+											class="carousel-control-prev" 
+											data-bs-target="#imagenes_1" 
+											type="button"
+											data-bs-slide="prev">
+												<!-- Soporte para usuarios ciegos -->
+												<span 
+												class="carousel-control-prev-icon"
+												aria-hidden="true"></span>
+												<span class="visually-hidden">Anterior</span>
+											</button>
+											<!-- Controles drch-->
+											<button 
+											class="carousel-control-next" 
+											data-bs-target="#imagenes_1" 
+											type="button"
+											data-bs-slide="next">
+												<!-- Soporte para usuarios ciegos -->
+												<span 
+												class="carousel-control-next-icon"
+												aria-hidden="true"></span>
+												<span class="visually-hidden">Siguiente</span>
+											</button>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -267,7 +307,69 @@
 				<!-- Banner de arma -->
 				<div class="card">
 					<div class="p-3">
-						<img class="card-img-top" src="img/ar/ak-47.jpg">						
+						<img 
+						class="card-img-top" 
+						src="img/ar/ak-47.jpg"
+						data-bs-toggle="modal" 
+						data-bs-target="#mimodal_2"
+						>
+						<!-- Fondo Modal -->
+						<div 
+						class="modal fade" 
+						id="mimodal_2" 
+						tabindex="-1" 
+						aria-hidden="true" 
+						aria-labelledby="label-modal-1">
+							<!-- Ventana -->
+							<div class="modal-dialog modal-dialog-centered">
+								<!-- Contenido -->
+								<div class="modal-content">
+									<div class="modal-body">
+										<!-- Carusel de imagenes -->
+										<div class="carousel slide carousel-dark border border-secondary" id="imagenes_2" data-bs-ride="carousel">
+											<div class="carousel-inner">
+												<div class="carousel-item active p-2">			
+													<img class="d-block w-100" src="img/ar/ak-47/ak-47a.jpg" alt="">
+												</div>
+												<div class="carousel-item p-2">
+													<img class="d-block w-100" src="img/ar/ak-47/ak-47b.jpg" alt="">
+												</div>
+												<div class="carousel-item p-2">
+													<img class="d-block w-100" src="img/ar/ak-47/ak-47c.jpg" alt="">
+												</div>
+												<div class="carousel-item p-2">
+													<img class="d-block w-100" src="img/ar/ak-47/ak-47d.jpg" alt="">
+												</div>							
+											</div>
+											<!-- Controles izq -->
+											<button 
+											class="carousel-control-prev" 
+											data-bs-target="#imagenes_2" 
+											type="button"
+											data-bs-slide="prev">
+												<!-- Soporte para usuarios ciegos -->
+												<span 
+												class="carousel-control-prev-icon"
+												aria-hidden="true"></span>
+												<span class="visually-hidden">Anterior</span>
+											</button>
+											<!-- Controles drch-->
+											<button 
+											class="carousel-control-next" 
+											data-bs-target="#imagenes_2" 
+											type="button"
+											data-bs-slide="next">
+												<!-- Soporte para usuarios ciegos -->
+												<span 
+												class="carousel-control-next-icon"
+												aria-hidden="true"></span>
+												<span class="visually-hidden">Siguiente</span>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 					<!-- Acordion -->
 					<div class="accordion mb-3">
