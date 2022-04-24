@@ -31,3 +31,15 @@
 	margin: 0;
 	padding: 0;
 }
+
+.accordion-body {
+	height: 340px;
+	overflow-y: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+	.accordion-body {
+		height: 340px;
+		overflow-y: scroll;
+	}
+}
