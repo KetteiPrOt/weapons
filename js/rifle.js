@@ -53,7 +53,7 @@ class Arma {
 	}
 }
 
-let wealponType = 'sg';
+let wealponType = 'rf';
 
 let one = new Arma(portadas[0]),
     two = new Arma(portadas[1]),
@@ -67,247 +67,249 @@ let one = new Arma(portadas[0]),
 
 /* ----- ----- ----- ARMA: one ----- ----- ----- */
 let srcName1 = 
-'remington870'
+'kar-98k'
 ,
 titleName1 =
-'Remington 870'
+'Kar-98K'
 ,
 textContent1 =
-'La Remington 870 es una escopeta corredera estadounidense, fabricada por la empresa Remington Arms. Es ampliamente empleada por civiles.',
+'Fusil de cerrojo que fue adoptado como fusil estándar de infantería en Alemania durante la Segunda Guerra Mundial.'
+,
 wigContenta1 =
-'Creada en 1950.'
+'Recámara de 5 cartuchos.'
 ,
 wigContentb1 =
-'Alimentada desde abajo.'
+'Cartucho 7,92x57 mm.'
 ,
 wigContentc1 =
-'Cartucho del 12.'
+'Alcance efectivo 800 m.'
 ,
 fuenteLink1 =
-'https://es.wikipedia.org/wiki/Remington_870'
+'https://es.wikipedia.org/wiki/Mauser_Kar_98k#:~:text=El%20Mauser%20Kar%2098k%20o,l%C3%ADnea%20de%20armas%20militares%20Mauser.'
 ,
 armaLink1 =
-'https://www.youtube.com/watch?v=zhxBwOeXNOk'
+'https://www.youtube.com/watch?v=2-YZRyF-4wI'
 ;
 
 
 /* ----- ----- ----- ARMA: two ----- ----- ----- */
 let srcName2 = 
-'saiga-12k'
+'mosin-nagant'
 ,
 titleName2 =
-'Saiga 12K'
+'Mosin Nagant'
 ,
 textContent2 =
-'Construida a partir del rifle de asalto AK47, la Saiga 12K es una escopeta semiautomática idónea para disparos en distancias cortas.',
+'Fusil de cerrojo que fue utilizado por las fuerzas armadas de la Rusia Imperial, más tarde por la Unión Soviética y diversas naciones.'
+,
 wigContenta2 =
-'Creada en 1990, Rusia.'
+'Recámara de 5 cartuchos.'
 ,
 wigContentb2 =
-'Capacidad de 5-8 cartuchos.'
+'Cartucho 7,62 x 54 R.'
 ,
 wigContentc2 =
-'Bajo retroceso.'
+'Alcance efectivo 550 m.'
 ,
 fuenteLink2 =
-'https://es.wikipedia.org/wiki/Saiga-12'
+'https://es.wikipedia.org/wiki/Mosin-Nagant'
 ,
 armaLink2 =
-'https://www.youtube.com/watch?v=n7E7H9XX97w'
+'https://www.youtube.com/watch?v=pon_E23_3Ws'
 ;
 
 
 /* ----- ----- ----- ARMA: three ----- ----- ----- */
 let srcName3 = 
-'m1887'
+'m40'
 ,
 titleName3 =
-'M1887'
+'M40'
 ,
 textContent3 =
-'Diseñada por el famoso armero estadounidense John Moses Browning a finales del siglo XIX fue una de las primeras escopetas de repetición.',
+'Fusil de francotirador de cerrojo empleado por el Cuerpo de Marines de los Estados Unidos. Fue introducido en 1966.'
+,
 wigContenta3 =
-'Acción de palanca'
+'Recámara de 5 cartuchos.'
 ,
 wigContentb3 =
-'Municion de calibre 12'
+'Municion 7,62 x 51 OTAN.'
 ,
 wigContentc3 =
-'Se produjeron 64,855 unidades'
+'Alcance efectivo 800 m.'
 ,
 fuenteLink3 =
-'https://es.wikipedia.org/wiki/Winchester_Modelo_1887'
+'https://es.wikipedia.org/wiki/Fusil_M40'
 ,
 armaLink3 =
-'https://www.youtube.com/watch?v=ExWX9_lWUPI'
+'https://www.youtube.com/watch?v=qwoXrwv3mN0'
 ;
+
 
 /* ----- ----- ----- ARMA: four ----- ----- ----- */
 let srcName4 = 
-'spas-12'
+'awp-l96'
 ,
 titleName4 =
-'SPAS-12'
+'AWP-L96'
 ,
 textContent4 =
-'Special Purpose Automatic Shotgun ("Escopeta automática de propósito especial") tiene un mecanismo de corte de carga.',
+'Fusil de francotirador de diseño modular que se ha hecho popular en la caza, la policía y ejercito desde la década de 1980.',
 wigContenta4 =
-'Modo de corredera.'
+'Cargador de 10 cartuchos.'
 ,
 wigContentb4 =
-'Munición de baja presión.'
+'Municion 7,62 x 51 OTAN.'
 ,
 wigContentc4 =
-'Munición Calibre 12'
+'Alcance efectivo 1100m.'
 ,
 fuenteLink4 =
-'https://es.wikipedia.org/wiki/SPAS-12'
+'https://es.wikipedia.org/wiki/Accuracy_International_Arctic_Warfare'
 ,
 armaLink4 =
-'https://www.youtube.com/watch?v=vWA0scjjTQU'
+'https://www.youtube.com/watch?v=8XXwvK0yds4'
 ;
+
 
 /* ----- ----- ----- ARMA: five ----- ----- ----- */
 let srcName5 = 
-'m1014'
+'m200'
 ,
 titleName5 =
-'M4'
+'M200'
 ,
 textContent5 =
-'Una escopeta semiautomática con capacidad para 7 cartuchos de calibre 12, con una cadencia de aproximadamente 125 disparos/ min.',
+'Es un fusil de francotirador de cerrojo estadounidense fabricado por CheyTac para interdicción de objetivos a larga distancia.',
 wigContenta5 =
-'Culata telescópica.'
+'Cargador recto 7 cartuchos.'
 ,
 wigContentb5 =
-'Popular entre los cuerpos policiales.'
+'Municion .408 CheyTac (10mm).'
 ,
 wigContentc5 =
-'Semiautomático o de acción manual.'
+'Alcance efectivo 2300m.'
 ,
 fuenteLink5 =
-'https://es.wikipedia.org/wiki/Benelli_M4#:~:text=Se%20trata%20de%20un%20modelo,modernas%20y%20efectivas%20del%20momento.'
+'https://es.wikipedia.org/wiki/CheyTac_Intervention'
 ,
 armaLink5 =
-'https://www.youtube.com/watch?v=kTfOPCRC4EI'
+'https://www.youtube.com/watch?v=wMMZohsH05Y'
 ;
-
 
 
 /* ----- ----- ----- ARMA: six ----- ----- ----- */
 let srcName6 = 
-'dp-12'
+'barrett'
 ,
 titleName6 =
-'DP-12'
+'M82-BARRETT'
 ,
 textContent6 =
-'Es una escopeta de acción de bomba con dos cañones y cargadores de tubos diseñada por norma de fabricación.',
+'Es un fusil de francotirador semiautomático anti-material. Actualmente es parte del equipo de muchas unidades especiales.',
 wigContenta6 =
-'Municion Calibre 12.'
+'Cargador recto 5 o 10 cartuchos.'
 ,
 wigContentb6 =
-'Acción de bombeo.'
+'Municion 12,7 x 99 mm (.50 BMG).'
 ,
 wigContentc6 =
-'Capacidad 8 + 8 municiones.'
+'Alcance efectivo 1800m.'
 ,
 fuenteLink6 =
-'https://en.wikipedia.org/wiki/Standard_Manufacturing_DP-12'
+'https://es.wikipedia.org/wiki/Barrett_M82'
 ,
 armaLink6 =
-'https://www.youtube.com/watch?v=u4dhRPolAWg'
+'https://www.youtube.com/watch?v=rLddq5dldDw'
 ;
-
 
 
 /* ----- ----- ----- ARMA: seven ----- ----- ----- */
 let srcName7 = 
-'s682'
+'dragunov'
 ,
 titleName7 =
-'BERETTA 682'
+'DRAGUNOV SVD'
 ,
 textContent7 =
-'La S689 pertenece a la familia de escopetas superpuestas Beretta 682 entra varios grados para caza, sporting clays, trap y skeet.',
+'Creado en la URSS entre 1958 y 1963. Fue el primer fusil semiautomático diseñado específicamente para ser usado en tiro militar de precisión.',
 wigContenta7 =
-'Cargador de dos disparos.'
+'Calibre 7,62mm.'
 ,
 wigContentb7 =
-'De competencia.'
+'Cargador curvo de 10 cartuchos.'
 ,
 wigContentc7 =
-'Producida hasta el año 1994.'
+'Alcance efectivo 800m (1300m máx).'
 ,
 fuenteLink7 =
-'https://es.wikipedia.org/wiki/Beretta_682'
+'https://es.wikipedia.org/wiki/Fusil_de_francotirador_Dragunov'
 ,
 armaLink7 =
-'https://www.youtube.com/watch?v=FQCFkiFb7fk'
+'https://www.youtube.com/watch?v=maMHMKnCmRg'
 ;
 
 /* ----- ----- ----- ARMA: eight ----- ----- ----- */
 let srcName8 = 
-'aa-12'
+'fn-49'
 ,
 titleName8 =
-'AA-12'
+'FN-49'
 ,
 textContent8 =
-'Atchisson Assault Shotgun es un rifle automático de calibre 12 creado por el ingeniero estadounidense Maxwell Atchisson.'
-,
+'Fabricado en 1949 por la Fabrique Nationale. Fue empleado por los ejércitos de Argentina, Colombia, Egipto, Venezuela, entre otros.',
 wigContenta8 =
-'Desarrollada en 1972.'
+'Calibre 7,62/65/92 mm.'
 ,
 wigContentb8 =
-'Dispara a cerrojo abierto.'
+'Cargador recto de 10 cartuchos.'
 ,
 wigContentc8 =
-'Cargador recto de 8 cartuchos.'
+'Alcance efectivo 800m.'
 ,
 fuenteLink8 =
-'https://es.wikipedia.org/wiki/AA-12'
+'https://es.wikipedia.org/wiki/FN_Modelo_1949'
 ,
 armaLink8 =
-'https://www.youtube.com/watch?v=WOoUVeyaY_8&t=193s'
+'https://www.youtube.com/watch?v=np31PVyZ1Gk'
 ;
 
 
 /* ----- ----- ----- ARMA: nine ----- ----- ----- */
-let srcName9 =
-'usas-12'
+let srcName9 = 
+'springfield'
 ,
 titleName9 =
-'USAS-12'
+'M1903 Springfield'
 ,
 textContent9 =
-'La Daewoo USAS-12 es una escopeta automática diseñada como escopeta de combate, desarrollada en Corea del Sur durante la década de 1980.'
-,
+'Fusil de cerrojo adoptado por el ejército estadounidense en la primera década del siglo xx reemplazando el anticuado Modelo 1892-99.',
 wigContenta9 =
-'Recarga accionada por gas.'
+'Calibre 7,62mm.'
 ,
 wigContentb9 =
-'Cadencia de tiro 400-450 dsp/min.'
+'Cargador interno de 5 cartuchos.'
 ,
 wigContentc9 =
-'Alcance efectivo de 40 m.'
+'Alcance efectivo 600m (1.097m max).'
 ,
 fuenteLink9 =
-'https://es.wikipedia.org/wiki/Daewoo_USAS-12'
+'https://es.wikipedia.org/wiki/Springfield_M1903'
 ,
 armaLink9 =
-'https://www.youtube.com/watch?v=YVx3BAA2YCo'
+'https://www.youtube.com/watch?v=9mbaO7qLzS8'
 ;
 
 
 /* ----- ----- ----- ARMA: one ----- ----- ----- */
 /*Modificando la Portada*/
-one.portadaCambiar(`img/${wealponType}/${srcName1}/${srcName1}a.jpg`);
+/*NORMAL: one.portadaCambiar(`img/smg/${srcName1}/${srcName1}.jpg`);*/
+one.portadaCambiar(`img/${wealponType}/${srcName1}/${srcName1}.jpg`);
 
 /*Agregando las rutas modales*/
 one.imagenCambiar(4, `img/${wealponType}/${srcName1}/${srcName1}a.jpg`);
 
-one.imagenCambiar(5, `img/${wealponType}/${srcName1}/${srcName1}b.jpg`); 
+one.imagenCambiar(5, `img/${wealponType}/${srcName1}/${srcName1}b.jpg`);
 
 one.imagenCambiar(6, `img/${wealponType}/${srcName1}/${srcName1}c.jpg`);
 
@@ -422,14 +424,14 @@ four.modificarEnlace(7, `${titleName4}`, `${armaLink4}`);
 
 /* ----- ----- ----- ARMA: five ----- ----- ----- */
 /*Modificando la Portada*/
-five.portadaCambiar(`img/${wealponType}/${srcName5}/${srcName5}.jpg`);
+five.portadaCambiar(`img/${wealponType}/${srcName5}/${srcName5}a.jpg`);
 
 /*Agregando las rutas modales*/
-five.imagenCambiar(16, `img/${wealponType}/${srcName5}/${srcName5}a.jpg`);
+five.imagenCambiar(16, `img/${wealponType}/${srcName5}/${srcName5}b.jpg`);
 
-five.imagenCambiar(17, `img/${wealponType}/${srcName5}/${srcName5}b.jpg`);
+five.imagenCambiar(17, `img/${wealponType}/${srcName5}/${srcName5}c.jpg`);
 
-five.imagenCambiar(18, `img/${wealponType}/${srcName5}/${srcName5}c.jpg`);
+five.imagenCambiar(18, `img/${wealponType}/${srcName5}/${srcName5}d.jpg`);
 
 /*Modificando el titulo*/
 five.tituloCambiar(4, `${titleName5}`);

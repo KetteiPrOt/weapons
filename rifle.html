@@ -3,14 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Rifles</title>
+	<title>RF</title>
 	<link  rel="icon" href="img/icon.png" type="image/png" />
 	<link rel="stylesheet" href="sand-stone/bootstrap.min.css">
 	<script src="sand-stone/bootstrap.bundle.min.js" defer></script>
 	<link rel="stylesheet" href="style.css">
 	<script src="js/script.js" defer></script>
-	<!-- <script src="js/copiarYpegar.js" defer></script> -->
-	<script src="js/shotgun.js" defer></script>
+	<script src="js/rifle.js" defer></script>
 </head>
 <body>
 
@@ -37,19 +36,17 @@
 				    	<!-- Contenido del navbar -->
 					    <div class="collapse navbar-collapse" id="navbarColor01">
 						    <ul class="navbar-nav me-auto">
-						        <li class="nav-item active me-2">
-						          	<a class="nav-link" href="index.html">
-						          		Assault Rifle						            	
-						          	</a>
+						        <li class="nav-item me-2">
+						          	<a class="nav-link" href="index.html">Assault Rifle</a>
 						        </li>
 						        <li class="nav-item me-2">
 						          	<a class="nav-link" href="smg.html">Sub Machine Gun</a>
 						        </li>
 						        <li class="nav-item me-2">
-						          	<a class="nav-link active" href="shotgun.html">Shot Gun<span class="visually-hidden">(current)</span></a>
+						          	<a class="nav-link" href="shotgun.html">Shot Gun</a>
 						        </li>
 						        <li class="nav-item me-2">
-						          	<a class="nav-link" href="#">Rifle</a>
+						          	<a class="nav-link active" href="rifle.html">Rifle<span class="visually-hidden">(current)</span></a>
 						        </li>
 						        <!-- Dropdown -->
 						        <li class="nav-item dropdown">
@@ -85,42 +82,26 @@
 
 	<div class="container">
 		<aside class="row">
-			<div class="col-12 mb-3">
+			<div class="col-12 mb-3 d-none d-sm-block">
 				<!-- Carousel -->
 				<div class="carousel slide carousel-dark border border-secondary" id="mi-carousel2" data-bs-ride="carousel">
 					<div class="carousel-inner">
 						<div class="carousel-item p-2">
-							<!-- Descripcion -->
-							<div class="carousel-caption d-none d-lg-block ajustar-descripcion">
-								<h5 class="titulo">Rifles de asalto (AR)</h5>
-								<p class="texto-blanco">Los rifles de asalto son el arma de infantería estándar en la mayoría de los ejércitos modernos y han reemplazado o complementado ampliamente a los más grandes y potentes fusiles de batalla.</p>
-							</div>
-							<img class="d-block w-100" src="img/ar/ak-12/ak-12.jpg" alt="">
+							<!-- AR -->
+							<img class="d-block w-100" src="img/carousel/assault-rifle.jpg" alt="">		
+						</div>
+						<div class="carousel-item p-2">
+							<!-- SG -->
+							<img class="d-block w-100" src="img/carousel/shotgun.jpg" alt="">
 						</div>
 						<div class="carousel-item active p-2">
-							<!-- Descripcion -->
-							<div class="carousel-caption d-none d-lg-block">
-								<h5 class="titulo">Escopetas (SG)</h5>
-								<p class="texto-blanco">Las escopetas, en combate, al disparar proyectiles múltiples, es decir, una "nube" de perdigones a la vez con cada disparo, permiten acertar con facilidad a corta distancia, aunque sea con parte de los perdigones, siendo un impacto de lleno demoledor. </p>
-							</div>
-							<img class="d-block w-100" src="img/sg/remington870/remington870.jpg" alt="">
+							<!-- RF -->
+							<img class="d-block w-100" src="img/carousel/rifle.jpg" alt="">
 						</div>
 						<div class="carousel-item p-2">
-							<!-- Descripcion -->
-							<div class="carousel-caption d-none d-lg-block ajustar-descripcion reducir-ancho">
-								<h5 class="titulo">Fusil (RF)</h5>
-								<p class="texto-blanco">El fusil de combate es de mayor calibre y alcance que el fusil de asalto. Más adecuado para disparos de cierto alcance, considerándose eficaces a 700 metros o más.</p>
-							</div>
-							<img class="d-block w-100" src="img/rf/m200/m200.jpg" alt="">
-						</div>
-						<div class="carousel-item p-2">
-							<!-- Descripcion -->
-							<div class="carousel-caption d-none d-lg-block ajustar-descripcion reducir-ancho">
-								<h5 class="titulo">Metralladoras (SMG)</h5>
-								<p class="texto-blanco">La metralleta o subfusil es una carabina automática diseñada para disparar munición de pistola pensada para proporcionar gran cadencia de fuego en distancias cortas y espacios cerrados.</p>
-							</div>
-							<img class="d-block w-100" src="img/smg/ump-45/ump-45.jpg" alt="">
-						</div>							
+							<!-- SMG -->							
+							<img class="d-block w-100" src="img/carousel/sub-machinegun.jpg" alt="">
+						</div>									
 					</div>
 					<!-- Controles izq -->
 					<button 
@@ -128,7 +109,7 @@
 					data-bs-target="#mi-carousel2" 
 					type="button"
 					data-bs-slide="prev">
-						<!-- Soporte para usuarios ciegos -->
+						<!-- Soporte -->
 						<span 
 						class="carousel-control-prev-icon"
 						aria-hidden="true"></span>
@@ -140,7 +121,7 @@
 					data-bs-target="#mi-carousel2" 
 					type="button"
 					data-bs-slide="next">
-						<!-- Soporte para usuarios ciegos -->
+						<!-- Soporte -->
 						<span 
 						class="carousel-control-next-icon"
 						aria-hidden="true"></span>
@@ -185,8 +166,11 @@
 		<div class="row mb-3">
 			<div class="col-12">
 				<!-- Titulo -->
-				<h1 class="text-center">Shot Gun</h1>
+				<h1 class="text-center">Rifles de tirador</h1>
 				<hr>
+			</div>
+			<div class="col-12 mb-3">
+				<p>El rifle de francotirador es un tipo de arma que permite el disparo a objetivos a muy larga distancia buscando la mayor precisión posible en el disparo, para lo cual va equipado con una mira telescópica y utiliza munición específica para el arma que permita alcanzar largas distancias sin perder precisión de tiro.</p>
 			</div>
 		</div>
 
@@ -234,7 +218,7 @@
 												type="button"
 												data-bs-slide="prev"
 											>
-												<!-- Soporte para usuarios ciegos -->
+												<!-- Soporte -->
 												<span 
 												class="carousel-control-prev-icon"
 												aria-hidden="true"></span>
@@ -246,7 +230,7 @@
 											data-bs-target="#imagenes_1" 
 											type="button"
 											data-bs-slide="next">
-												<!-- Soporte para usuarios ciegos -->
+												<!-- Soporte -->
 												<span 
 												class="carousel-control-next-icon"
 												aria-hidden="true"></span>
@@ -1146,6 +1130,12 @@
 												</div>
 												<div class="carousel-item p-2">
 													<img class="d-block w-100" src="img/smg/vector/vectorc.jpg" alt="vector-submachine-gun">
+												</div>	
+												<div class="carousel-item p-2">
+													<img class="d-block w-100" src="img/rf/springfield/springfieldd.jpg" alt="vector-submachine-gun">
+												</div>	
+												<div class="carousel-item p-2">
+													<img class="d-block w-100" src="img/rf/springfield/springfielde.jpg" alt="vector-submachine-gun">
 												</div>				
 											</div>
 											<!-- Controles izq -->
