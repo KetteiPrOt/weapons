@@ -3,12 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>AR</title>
+	<title>HG</title>
 	<link  rel="icon" href="img/icon.png" type="image/png" />
 	<link rel="stylesheet" href="sand-stone/bootstrap.min.css">
 	<script src="sand-stone/bootstrap.bundle.min.js" defer></script>
 	<link rel="stylesheet" href="style.css">
 	<script src="js/script.js" defer></script>
+	<script src="js/handgun.js" defer></script>
 </head>
 <body>
 
@@ -19,7 +20,7 @@
 				<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 				  	<div class="container-fluid">
 				  		<!-- Brand -->
-				    	<a class="navbar-brand me-4" href="index.html"><h2>Armas</h2></a>
+				    	<a class="navbar-brand me-4" href="handgun.html"><h2>Armas</h2></a>
 				    	<!-- Boton collapse -->
 				    	<button 
 				    		class="navbar-toggler" 
@@ -35,10 +36,8 @@
 				    	<!-- Contenido del navbar -->
 					    <div class="collapse navbar-collapse" id="navbarColor01">
 						    <ul class="navbar-nav me-auto">
-						        <li class="nav-item active me-2">
-						          	<a class="nav-link active" href="index.html">Assault Rifle
-						            	<span class="visually-hidden">(current)</span>
-						          	</a>
+						        <li class="nav-item me-2">
+						          	<a class="nav-link" href="index.html">Assault Rifle</a>
 						        </li>
 						        <li class="nav-item me-2">
 						          	<a class="nav-link" href="smg.html">Sub Machine Gun</a>
@@ -79,17 +78,22 @@
 		</div>
 	</header>
 
-	<div class="container">
+	<style>
+		.ocultar {
+			display: none;
+		}
+	</style>
+	<div class="container ocultar">
 		<aside class="row">
-			<div class="col-12 mb-3">
+			<div class="col-12 mb-3 d-none d-sm-block">
 				<!-- Carousel -->
 				<div class="carousel slide carousel-dark border border-secondary" id="mi-carousel2" data-bs-ride="carousel">
 					<div class="carousel-inner">
-						<div class="carousel-item active p-2">
+						<div class="carousel-item p-2">
 							<!-- AR -->
 							<img class="d-block w-100" src="img/carousel/assault-rifle.jpg" alt="">		
 						</div>
-						<div class="carousel-item p-2">
+						<div class="carousel-item active p-2">
 							<!-- SG -->
 							<img class="d-block w-100" src="img/carousel/shotgun.jpg" alt="">
 						</div>
@@ -100,7 +104,7 @@
 						<div class="carousel-item p-2">
 							<!-- SMG -->							
 							<img class="d-block w-100" src="img/carousel/sub-machinegun.jpg" alt="">
-						</div>							
+						</div>									
 					</div>
 					<!-- Controles izq -->
 					<button 
@@ -108,7 +112,7 @@
 					data-bs-target="#mi-carousel2" 
 					type="button"
 					data-bs-slide="prev">
-						<!-- Soporte para usuarios ciegos -->
+						<!-- Soporte -->
 						<span 
 						class="carousel-control-prev-icon"
 						aria-hidden="true"></span>
@@ -120,7 +124,7 @@
 					data-bs-target="#mi-carousel2" 
 					type="button"
 					data-bs-slide="next">
-						<!-- Soporte para usuarios ciegos -->
+						<!-- Soporte -->
 						<span 
 						class="carousel-control-next-icon"
 						aria-hidden="true"></span>
@@ -165,12 +169,12 @@
 		<div class="row mb-3">
 			<div class="col-12">
 				<!-- Titulo -->
-				<h1 class="text-center">Rifles de asalto</h1>
+				<h1 class="text-center">Armas de mano</h1>
 				<hr>
 			</div>
 			<!-- Parrafo -->
 			<div class="col-12 mb-3">
-				<p>Son fusies diseñados para el combate, de fuego selectivo (automático/semiautomático) siendo el arma de infantería estándar en la mayoría de los ejércitos modernos. Han reemplazado o complementado ampliamente a los más grandes y potentes fusiles de fusiles de tirador.</p>
+				<p>Una pistola es un arma de fuego corta diseñada para ser apuntada y disparada con una sola mano, o con dos, se puede utilizar para la caza dependiendo del arma, y dispara balas a corto alcance. Todos los modelos que utilizan las fuerzas de seguridad y los ejércitos son pistolas de doble acción.</p>
 			</div>
 		</div>
 
@@ -182,7 +186,7 @@
 					<div class="p-3">
 						<img 
 						class="card-img-top" 
-						src="img/ar/ak-12/ak-12.jpg"
+						src="img\smg\mp5\mp5.jpg"
 						data-bs-toggle="modal" 
 						data-bs-target="#mimodal_1"
 						>
@@ -202,21 +206,22 @@
 										<div class="carousel slide carousel-dark border border-secondary" id="imagenes_1" data-bs-ride="carousel">
 											<div class="carousel-inner">
 												<div class="carousel-item active p-2">
-													<img class="d-block w-100" src="img/ar/ak-12/ak-12a.jpg" alt="">
+													<img class="d-block w-100" src="img\smg\mp5\mp5a.jpg" alt="mp5-submachine-gun">
 												</div>	
 												<div class="carousel-item p-2">
-													<img class="d-block w-100" src="img/ar/ak-12/ak-12b.jpg" alt="">
+													<img class="d-block w-100" src="img\smg\mp5\mp5b.jpg" alt="mp5-submachine-gun">
 												</div>	
 												<div class="carousel-item p-2">
-													<img class="d-block w-100" src="img/ar/ak-12/ak-12c.jpg" alt="">
+													<img class="d-block w-100" src="img\smg\mp5\mp5c.jpg" alt="mp5-submachine-gun">
 												</div>				
 											</div>
 											<!-- Controles izq -->
 											<button 
-											class="carousel-control-prev" 
-											data-bs-target="#imagenes_1" 
-											type="button"
-											data-bs-slide="prev">
+												class="carousel-control-prev" 
+												data-bs-target="#imagenes_1" 
+												type="button"
+												data-bs-slide="prev"
+											>
 												<!-- Soporte para usuarios ciegos -->
 												<span 
 												class="carousel-control-prev-icon"
@@ -254,7 +259,7 @@
 					      			aria-expanded="false" 
 					      			aria-controls="contenido_0"
 					      		>
-					        		<h3 class="text">AK-12</h3>
+					        		<h3 class="text">MP5</h3>
 					      		</button>
 					    	</h2>
 					    	<!-- Contenido -->
@@ -269,18 +274,18 @@
 									  	<!-- Card Body -->
 									  	<div class="card-body">
 									  		<!-- Texto -->
-									    	<p class="card-text">El AK-12 (en ruso: АК-12), es el nuevo fusil de asalto ruso derivado del fusil de asalto soviético AK-74M.</p>
+									    	<p class="card-text">El MP5 es uno de los subfusiles más utilizados en el mundo, ya que ha sido adoptada por 40 naciones y numerosas organizaciones militares.</p>
 									  	</div>
 									  	<ul class="list-group list-group-flush">
 									  		<!-- Lista -->
-										    <li class="list-group-item">Selector de disparo.</li>
-										    <li class="list-group-item">Tecnología avanzada.</li>
-										    <li class="list-group-item">Temperaturas altas y frías.</li>
+										    <li class="list-group-item">Sistema de numeración HK.</li>
+										    <li class="list-group-item">Utilizada por élite británica SAS.</li>
+										    <li class="list-group-item">Emblema de Fracción del Ejército Rojo.</li>
 									  	</ul>
 									  	<div class="card-body">
 									  		<!-- Enlaces -->
-										    <a href="https://es.wikipedia.org/wiki/AK-12" target="_blank" class="card-link">Fuente</a>
-										    <a href="https://youtu.be/uitMqWMWiWM" target="_blank" class="card-link">AK-12</a>
+										    <a href="https://www.youtube.com/watch?v=cv0hM99Gvec" target="_blank" class="card-link">Fuente</a>
+										    <a href="https://es.wikipedia.org/wiki/Heckler_%26_Koch_MP5#:~:text=El%20MP5%20(abreviatura%20de%20Maschinenpistole,am%20Neckar%2C%20en%20Alemania%20Occidental." target="_blank" class="card-link">MP5</a>
 									  	</div>
 									</div>
 					      		</div>
@@ -296,7 +301,7 @@
 					<div class="p-3">
 						<img 
 						class="card-img-top" 
-						src="img/ar/ak-47/ak-47.jpg"
+						src="img/smg/mp-5k/mp-5k.jpg"
 						data-bs-toggle="modal" 
 						data-bs-target="#mimodal_2"
 						>
@@ -315,14 +320,14 @@
 										<!-- Carusel de imagenes -->
 										<div class="carousel slide carousel-dark border border-secondary" id="imagenes_2" data-bs-ride="carousel">
 											<div class="carousel-inner">
-												<div class="carousel-item active p-2">			
-													<img class="d-block w-100" src="img/ar/ak-47/ak-47a.jpg" alt="">
+												<div class="carousel-item active p-2">	
+													<img class="d-block w-100" src="img/smg/mp-5k/mp-5ka.jpg" alt="mp-5k-submachinegun">
 												</div>
 												<div class="carousel-item p-2">
-													<img class="d-block w-100" src="img/ar/ak-47/ak-47b.jpg" alt="">
+													<img class="d-block w-100" src="img/smg/mp-5k/mp-5kb.jpg" alt="mp-5k-submachinegun">
 												</div>
 												<div class="carousel-item p-2">
-													<img class="d-block w-100" src="img/ar/ak-47/ak-47c.jpg" alt="">
+													<img class="d-block w-100" src="img/smg/mp-5k/mp-5kc.jpg" alt="mp-5k-submachinegun">
 												</div>						
 											</div>
 											<!-- Controles izq -->
@@ -368,7 +373,7 @@
 					      			aria-expanded="false" 
 					      			aria-controls="contenido_1"
 					      		>
-					        		<h3 class="text">AK-47</h3>
+					        		<h3 class="text">MP-5K</h3>
 					      		</button>
 					    	</h2>
 					    	<!-- Contenido -->
@@ -383,18 +388,18 @@
 									  	<!-- Card Body -->
 									  	<div class="card-body">
 									  		<!-- Texto -->
-									    	<p class="card-text">El AK fue el arma de fuego de mayor producción con cerca de 100 millones de unidades manufacturadas.</p>
+									    	<p class="card-text">Bien supliendo o complementando a la pistola, esta arma provee al tirador de una potencia de fuego sin par en un paquete pequeño.</p>
 									  	</div>
 									  	<ul class="list-group list-group-flush">
 									  		<!-- Lista -->
-										    <li class="list-group-item">1949 - presente.</li>
-										    <li class="list-group-item">Cadencia de 600 disparos/min.</li>
-										    <li class="list-group-item">Presente en todas las guerras.</li>
+										    <li class="list-group-item">Ligero para llevar.</li>
+										    <li class="list-group-item">Flexibilidad táctica.</li>
+										    <li class="list-group-item">Versión recortada de la MP5.</li>
 									  	</ul>
 									  	<div class="card-body">
 									  		<!-- Enlaces -->
-										    <a href="https://es.wikipedia.org/wiki/AK-47" target="_blank" class="card-link">Fuente</a>
-										    <a href="https://www.youtube.com/watch?v=K5mvvK68xG4" target="_blank" class="card-link">AK-47</a>
+										    <a href="https://www.ecured.cu/HK_MP5K" target="_blank" class="card-link">Fuente</a>
+										    <a href="https://es.wikipedia.org/wiki/Heckler_%26_Koch_MP5" target="_blank" class="card-link">MP-5K</a>
 									  	</div>
 									</div>
 					      		</div>
@@ -410,7 +415,7 @@
 					<div class="p-3">
 						<img 
 						class="card-img-top" 
-						src="img/ar/aug-a1/aug-a1.jpg"
+						src="img/smg/mp-40/mp-40.jpg"
 						data-bs-toggle="modal" 
 						data-bs-target="#mimodal_3"
 						>
@@ -430,13 +435,13 @@
 										<div class="carousel slide carousel-dark border border-secondary" id="imagenes_3" data-bs-ride="carousel">
 											<div class="carousel-inner">
 												<div class="carousel-item active p-2">
-													<img class="d-block w-100" src="img/ar/aug-a1/aug-a1a.jpg" alt="assault-rifle-auga1">
+													<img class="d-block w-100" src="img/smg/mp-40/mp-40a.jpg" alt="mp-40-submachinegun">
 												</div>
 												<div class="carousel-item p-2">
-													<img class="d-block w-100" src="img/ar/aug-a1/aug-a1b.jpg" alt="assault-rifle-auga1">
+													<img class="d-block w-100" src="img/smg/mp-40/mp-40b.jpg" alt="mp-40-submachinegun">
 												</div>
 												<div class="carousel-item p-2">
-													<img class="d-block w-100" src="img/ar/aug-a1/aug-a1c.jpg" alt="assault-rifle-auga1">
+													<img class="d-block w-100" src="img/smg/mp-40/mp-40c.jpg" alt="mp-40-submachinegun">
 												</div>						
 											</div>
 											<!-- Controles izq -->
@@ -482,7 +487,7 @@
 					      			aria-expanded="false" 
 					      			aria-controls="contenido_2"
 					      		>
-					        		<h3 class="text">AUG-A1</h3>
+					        		<h3 class="text">MP-40</h3>
 					      		</button>
 					    	</h2>
 					    	<!-- Contenido -->
@@ -497,18 +502,18 @@
 									  	<!-- Card Body -->
 									  	<div class="card-body">
 									  		<!-- Texto -->
-									    	<p class="card-text">El Steyr AUG es un fusil de asalto, introducido en 1978, reemplazando al StG 58 de 7,62 mm.</p>
+									    	<p class="card-text">Uno de los más utilizados y populares entre la milicia de la Alemania Nazi en el siglo XX durante la segunda guerra mundial.</p>
 									  	</div>
 									  	<ul class="list-group list-group-flush">
 									  		<!-- Lista -->
-										    <li class="list-group-item">En producción desde 1978.</li>
-										    <li class="list-group-item">Cargador de caja de doble.</li>
-										    <li class="list-group-item">Se puede configurar.</li>
+										    <li class="list-group-item">Diseñado por Heinrich Vollmer.</li>
+										    <li class="list-group-item">Combate de corto alcance.</li>
+										    <li class="list-group-item">Perdía a partir de 200 metros.</li>
 									  	</ul>
 									  	<div class="card-body">
 									  		<!-- Enlaces -->
-										    <a href="https://es.wikipedia.org/wiki/Steyr_AUG#:~:text=Un%20Steyr%20AUG%20A1.&text=El%20Steyr%20AUG%20es%20un,%22fusil%20universal%20del%20ej%C3%A9rcito%22." target="_blank" class="card-link" target="_blank" class="card-link">Fuente</a>
-										    <a href="https://www.youtube.com/watch?v=wN4eYefoHQk" target="_blank" class="card-link">AUG-A1</a>
+										    <a href="https://ueec.es/subfusil/mp40/" target="_blank" class="card-link">Fuente</a>
+										    <a href="https://es.wikipedia.org/wiki/MP40#:~:text=El%20MP40%20ten%C3%ADa%20una%20longitud,)%2C%20como%20el%20Sdkfz%20251." target="_blank" class="card-link">MP-40</a>
 									  	</div>
 									</div>
 					      		</div>
@@ -528,7 +533,7 @@
 					<div class="p-3">
 						<img 
 						class="card-img-top" 
-						src="img/ar/groza/groza.jpg"
+						src="img/smg/p90/p90.jpg"
 						data-bs-toggle="modal" 
 						data-bs-target="#mimodal_4"
 						>
@@ -548,13 +553,13 @@
 										<div class="carousel slide carousel-dark border border-secondary" id="imagenes_4" data-bs-ride="carousel">
 											<div class="carousel-inner">
 												<div class="carousel-item p-2">
-													<img class="d-block w-100" src="img/ar/groza/grozaa.jpg" alt="groza-assault-rifle">
+													<img class="d-block w-100" src="img/smg/p90/p90a.jpg" alt="p90-submachine-gun">
 												</div>
 												<div class="carousel-item active p-2">
-													<img class="d-block w-100" src="img/ar/groza/grozab.jpg" alt="groza-assault-rifle">
+													<img class="d-block w-100" src="img/smg/p90/p90a.jpg" alt="p90-submachine-gun">
 												</div>
 												<div class="carousel-item p-2">
-													<img class="d-block w-100" src="img/ar/groza/grozac.jpg" alt="groza-assault-rifle">
+													<img class="d-block w-100" src="img/smg/p90/p90c.jpg" alt="p90-submachine-gun">
 												</div>						
 											</div>
 											<!-- Controles izq -->
@@ -600,7 +605,7 @@
 					      			aria-expanded="false" 
 					      			aria-controls="contenido_3"
 					      		>
-					        		<h3 class="text">Groza</h3>
+					        		<h3 class="text">P90</h3>
 					      		</button>
 					    	</h2>
 					    	<!-- Contenido -->
@@ -615,18 +620,18 @@
 									  	<!-- Card Body -->
 									  	<div class="card-body">
 									  		<!-- Texto -->
-									    	<p class="card-text">Rifle de asalto totalmente automático. Velocidad de disparo rápida y rango de daño razonable.</p>
+									    	<p class="card-text">Esta arma tiene características técnicas innovadoras en comparación con otras, en particular su pequeño tamaño y muy alta cadencia de fuego.</p>
 									  	</div>
 									  	<ul class="list-group list-group-flush">
 									  		<!-- Lista -->
-										    <li class="list-group-item">Cartucho 7,62 x 39.</li>
-										    <li class="list-group-item">Cartucho subsónico 9 x 39.</li>
-										    <li class="list-group-item">Diseñado en la Federación Rusa.</li>
+										    <li class="list-group-item">Cartucho 5,7 × 28 mm.</li>
+										    <li class="list-group-item">Utilizado en más de 40 países.</li>
+										    <li class="list-group-item">Arma de defensa personal .</li>
 									  	</ul>
 									  	<div class="card-body">
 									  		<!-- Enlaces -->
-										    <a href="https://callofduty.fandom.com/es/wiki/Groza#:~:text=%22Rifle%20de%20asalto%20totalmente%20autom%C3%A1tico,y%20rango%20de%20da%C3%B1o%20razonable%22.&text=La%20Groza%20es%20un%20rifle,contenido%20de%20la%20primera%20temporada." target="_blank" class="card-link">Fuente</a>
-										    <a href="https://www.youtube.com/watch?v=KEHi7_GDjDA" class="card-link">Groza</a>
+										    <a href="https://es.frwiki.wiki/wiki/FN_P90#:~:text=Calibre%20FN%20P90%205.7%20x%2028%20mm%20con%20cargador%20.&text=El%20FN%20P90%20(para%20%22%20Fabrique,muy%20alta%20cadencia%20de%20fuego%20." target="_blank" class="card-link">Fuente</a>
+										    <a href="https://es.wikipedia.org/wiki/FN_P90" target="_blank" class="card-link">P90</a>
 									  	</div>
 									</div>
 					      		</div>
@@ -642,7 +647,7 @@
 					<div class="p-3">
 						<img 
 						class="card-img-top" 
-						src="img/ar/m4a1/m4a1.jpg"
+						src="img/smg/thompson/thompson.jpg"
 						data-bs-toggle="modal" 
 						data-bs-target="#mimodal_5"
 						>
@@ -662,13 +667,13 @@
 										<div class="carousel slide carousel-dark border border-secondary" id="imagenes_5" data-bs-ride="carousel">
 											<div class="carousel-inner">
 												<div class="carousel-item active p-2">
-													<img class="d-block w-100" src="img/ar/m4a1/m4a1a.jpg" alt="m4a1-usa-rifle">
+													<img class="d-block w-100" src="img/smg/thompson/thompsona.jpg" alt="m4a1-usa-rifle">
 												</div>
 												<div class="carousel-item p-2">
-													<img class="d-block w-100" src="img/ar/m4a1/m4a1b.jpg" alt="m4a1-usa-rifle">
+													<img class="d-block w-100" src="img/smg/thompson/thompsonb.jpg" alt="m4a1-usa-rifle">
 												</div>
 												<div class="carousel-item p-2">
-													<img class="d-block w-100" src="img/ar/m4a1/m4a1c.jpg" alt="m4a1-usa-rifle">
+													<img class="d-block w-100" src="img/smg/thompson/thompsonc.jpg" alt="m4a1-usa-rifle">
 												</div>						
 											</div>
 											<!-- Controles izq -->
@@ -714,7 +719,7 @@
 					      			aria-expanded="false" 
 					      			aria-controls="contenido_4"
 					      		>
-					        		<h3 class="text">M4A1</h3>
+					        		<h3 class="text">Thompson</h3>
 					      		</button>
 					    	</h2>
 					    	<!-- Contenido -->
@@ -729,18 +734,18 @@
 									  	<!-- Card Body -->
 									  	<div class="card-body">
 									  		<!-- Texto -->
-									    	<p class="card-text">Proporciona a quien opera en espacios cerrados la capacidad de atacar con fuego preciso y letal.</p>
+									    	<p class="card-text">Diseñado por el oficial estadounidense John Thompson, equipó al ejército estadounidense hasta la década de 1960.</p>
 									  	</div>
 									  	<ul class="list-group list-group-flush">
 									  		<!-- Lista -->
-										    <li class="list-group-item">Versión más pequeña del fusil M16A2.</li>
-										    <li class="list-group-item">Sustituye a la subametralladora M3.</li>
-										    <li class="list-group-item">Fácil manipulación.</li>
+										    <li class="list-group-item">Utilizada por el crimen organizado.</li>
+										    <li class="list-group-item">Protagonizo la Gran Guerra.</li>
+										    <li class="list-group-item">Calibre 45. ACP.</li>
 									  	</ul>
 									  	<div class="card-body">
 									  		<!-- Enlaces -->
-										    <a href="https://es.wikipedia.org/wiki/Carabina_M4" target="_blank" class="card-link">Fuente</a>
-										    <a href="https://youtu.be/V4_Wyo6pC0A" target="_blank" class="card-link">M4A1</a>
+										    <a href="https://archivoshistoria.com/el-subfusil-thompson-una-leyenda-de-nuestro-tiempo/" target="_blank" class="card-link">Fuente</a>
+										    <a href="https://es.wikipedia.org/wiki/Subfusil_Thompson#:~:text=Longitud%3A%20808%20mm%20(31%2C,balas%3B%2018%20balas%20del%20tipo%20." target="_blank" class="card-link">Thompson</a>
 									  	</div>
 									</div>
 					      		</div>
@@ -756,7 +761,7 @@
 					<div class="p-3">
 						<img 
 						class="card-img-top" 
-						src="img/ar/m16/m16.jpg"
+						src="img/smg/pp-19-bizon/pp-19-bizon.jpg"
 						data-bs-toggle="modal" 
 						data-bs-target="#mimodal_6"
 						>
@@ -776,13 +781,13 @@
 										<div class="carousel slide carousel-dark border border-secondary" id="imagenes_6" data-bs-ride="carousel">
 											<div class="carousel-inner">
 												<div class="carousel-item active p-2">
-													<img class="d-block w-100" src="img/ar/m16/m16a.jpg" alt="m16-assault-rifle">
+													<img class="d-block w-100" src="img/smg/pp-19-bizon/pp-19-bizona.jpg" alt="p19bizon-submachine-gun">
 												</div>
 												<div class="carousel-item p-2">
-													<img class="d-block w-100" src="img/ar/m16/m16b.jpg" alt="m16-assault-rifle">
+													<img class="d-block w-100" src="img/smg/pp-19-bizon/pp-19-bizonb.jpg" alt="p19bizon-submachine-gun">
 												</div>
 												<div class="carousel-item p-2">
-													<img class="d-block w-100" src="img/ar/m16/m16c.jpg" alt="m16-assault-rifle">
+													<img class="d-block w-100" src="img/smg/pp-19-bizon/pp-19-bizonc.jpg" alt="p19bizon-submachine-gun">
 												</div>						
 											</div>
 											<!-- Controles izq -->
@@ -828,7 +833,7 @@
 					      			aria-expanded="false" 
 					      			aria-controls="contenido_5"
 					      		>
-					        		<h3 class="text">M16</h3>
+					        		<h3 class="text">PP19 Bizon</h3>
 					      		</button>
 					    	</h2>
 					    	<!-- Contenido -->
@@ -843,18 +848,18 @@
 									  	<!-- Card Body -->
 									  	<div class="card-body">
 									  		<!-- Texto -->
-									    	<p class="card-text">Este subfusil de asalto tuvo un protagonismo trascendental en la guerra de Vietnam.</p>
+									    	<p class="card-text">Fue desarrollado en Rusia y está destinado principalmente a unidades policiales que necesitan disparos rápidos y precisos a corta distancia .</p>
 									  	</div>
 									  	<ul class="list-group list-group-flush">
 									  		<!-- Lista -->
-										    <li class="list-group-item">Principal antítesis del AK47</li>
-										    <li class="list-group-item">Alcance medio (200 metros).</li>
-										    <li class="list-group-item">Calibre 5,56mm x 45.</li>
+										    <li class="list-group-item">En servicio desde 1996.</li>
+										    <li class="list-group-item">Arma antiterrorista.</li>
+										    <li class="list-group-item">Fuego selectivo.</li>
 									  	</ul>
 									  	<div class="card-body">
 									  		<!-- Enlaces -->
-										    <a href="https://es.wikipedia.org/wiki/Fusil_M16" target="_blank" class="card-link">Fuente</a>
-										    <a href="https://www.youtube.com/watch?v=4xtkVYsIzSc" target="_blank" class="card-link">M16</a>
+										    <a href="https://hmong.es/wiki/Bizon_SMG" target="_blank" class="card-link">Fuente</a>
+										    <a href="https://es.wikipedia.org/wiki/PP-19_Bizon#:~:text=6%20Enlaces%20externos-,Detalles%20del%20dise%C3%B1o,pistola%209%20x%2018%20Makarov." target="_blank" class="card-link">PP19-Bizon</a>
 									  	</div>
 									</div>
 					      		</div>
@@ -874,7 +879,7 @@
 					<div class="p-3">
 						<img 
 						class="card-img-top" 
-						src="img/ar/m762/m762.jpg"
+						src="img/smg/ump-45/ump-45a.jpg"
 						data-bs-toggle="modal" 
 						data-bs-target="#mimodal_7"
 						>
@@ -894,13 +899,13 @@
 										<div class="carousel slide carousel-dark border border-secondary" id="imagenes_7" data-bs-ride="carousel">
 											<div class="carousel-inner">
 												<div class="carousel-item active p-2">
-													<img class="d-block w-100" src="img/ar/m762/m762a.jpg" alt="m-792-assault-rifle">
+													<img class="d-block w-100" src="img/smg/ump-45/ump-45b.jpg" alt="ump-45-machine-gun">
 												</div>
 												<div class="carousel-item p-2">
-													<img class="d-block w-100" src="img/ar/m762/m762b.jpg" alt="m-792-assault-rifle">
+													<img class="d-block w-100" src="img/smg/ump-45/ump-45c.jpg" alt="ump-45-machine-gun">
 												</div>
 												<div class="carousel-item p-2">
-													<img class="d-block w-100" src="img/ar/m762/m762c.jpg" alt="m-792-assault-rifle">
+													<img class="d-block w-100" src="img/smg/ump-45/ump-45d.jpg" alt="ump-45-machine-gun">
 												</div>						
 											</div>
 											<!-- Controles izq -->
@@ -946,7 +951,7 @@
 					      			aria-expanded="false" 
 					      			aria-controls="contenido_6"
 					      		>
-					        		<h3 class="text">M762</h3>
+					        		<h3 class="text">UMP-45</h3>
 					      		</button>
 					    	</h2>
 					    	<!-- Contenido -->
@@ -961,18 +966,18 @@
 									  	<!-- Card Body -->
 									  	<div class="card-body">
 									  		<!-- Texto -->
-									    	<p class="card-text">La Beryl M762 es una variante del FB Beryl, con su nombre con el calibre de 7.62 mm para el que está alojado.</p>
+									    	<p class="card-text">El UMP ha sido adoptado por diversas agencias policiales, como la Oficina de Aduanas y Protección Fronteriza de los Estados Unidos.</p>
 									  	</div>
 									  	<ul class="list-group list-group-flush">
 									  		<!-- Lista -->
-										    <li class="list-group-item">Cadencia 0,086s.</li>
-										    <li class="list-group-item">Alcance 100m - 500m.</li>
-										    <li class="list-group-item">Semiautomático, automático, ráfaga.</li>
+										    <li class="list-group-item">Longitud del cañón 200 mm.</li>
+										    <li class="list-group-item">600 disparos/min.</li>
+										    <li class="list-group-item">Alcance efectivo 100 m.</li>
 									  	</ul>
 									  	<div class="card-body">
 									  		<!-- Enlaces -->
-										    <a href="https://en.wikipedia.org/wiki/FB_Beryl" target="_blank" class="card-link">Fuente</a>
-										    <a href="https://www.youtube.com/watch?v=U5peJZkpMkM" target="_blank" class="card-link">M792</a>
+										    <a href="https://sites.google.com/a/sanfer.es/las-armas2/subfusiles/ump-45" target="_blank" class="card-link">Fuente</a>
+										    <a href="https://es.wikipedia.org/wiki/Heckler_%26_Koch_UMP" target="_blank" class="card-link">UMP-45</a>
 									  	</div>
 									</div>
 					      		</div>
@@ -988,7 +993,7 @@
 					<div class="p-3">
 						<img 
 						class="card-img-top" 
-						src="img/ar/qbz95/qbz95.jpg"
+						src="img/smg/uzi/uzi.jpg"
 						data-bs-toggle="modal" 
 						data-bs-target="#mimodal_8"
 						>
@@ -1008,17 +1013,14 @@
 										<div class="carousel slide carousel-dark border border-secondary" id="imagenes_8" data-bs-ride="carousel">
 											<div class="carousel-inner">
 												<div class="carousel-item active p-2">
-													<img class="d-block w-100" src="img/ar/qbz95/qbz95a.jpg" alt="qbz95-pug-wealpon">
+													<img class="d-block w-100" src="img/smg/uzi/uzia.jpg" alt="uzi-submachine-gun">
 												</div>
 												<div class="carousel-item p-2">
-													<img class="d-block w-100" src="img/ar/qbz95/qbz95b.jpg" alt="qbz95-pug-wealpon">
+													<img class="d-block w-100" src="img/smg/uzi/uzib.jpg" alt="uzi-submachine-gun">
 												</div>
 												<div class="carousel-item p-2">
-													<img class="d-block w-100" src="img/ar/qbz95/qbz95c.jpg" alt="qbz95-pug-wealpon">
-												</div>
-												<div class="carousel-item p-2">
-													<img class="d-block w-100" src="img/ar/qbz95/qbz95xd.jpg" alt="qbz95-gfl-wealpon">
-												</div>						
+													<img class="d-block w-100" src="img/smg/uzi/uzic.jpg" alt="uzi-submachine-gun">
+												</div>				
 											</div>
 											<!-- Controles izq -->
 											<button 
@@ -1063,7 +1065,7 @@
 					      			aria-expanded="false" 
 					      			aria-controls="contenido_7"
 					      		>
-					        		<h3 class="text">QBZ95</h3>
+					        		<h3 class="text">UZI</h3>
 					      		</button>
 					    	</h2>
 					    	<!-- Contenido -->
@@ -1078,18 +1080,18 @@
 									  	<!-- Card Body -->
 									  	<div class="card-body">
 									  		<!-- Texto -->
-									    	<p class="card-text">Es un excelente fusil de asalto utilizado por el Ejército Popular de Liberación Chino.</p>
+									    	<p class="card-text">Uziel Gal construyo un arma eficaz, sencilla y de reducidas dimensiones que se convirtió en todo un símbolo nacional para Israel.</p>
 									  	</div>
 									  	<ul class="list-group list-group-flush">
 									  		<!-- Lista -->
-										    <li class="list-group-item">Municion 5,8x42 mm DBP87.</li>
-										    <li class="list-group-item">Alcance efectivo 400m.</li>
-										    <li class="list-group-item">Sistema accionado por gas.</li>
+										    <li class="list-group-item">Creación: 1951.</li>
+										    <li class="list-group-item">Calibre 9mm x 19 Parabellum.</li>
+										    <li class="list-group-item">44 cm de longitud.</li>
 									  	</ul>
 									  	<div class="card-body">
 									  		<!-- Enlaces -->
-										    <a href="https://es.wikipedia.org/wiki/QBZ-95" target="_blank" class="card-link">Fuente</a>
-										    <a href="https://www.youtube.com/watch?v=38NQufMZ568" target="_blank" class="card-link">QBZ95</a>
+										    <a href="https://www.armas.es/listado-armas/subfusiles/uzi" target="_blank" class="card-link">Fuente</a>
+										    <a href="https://es.wikipedia.org/wiki/Uzi#:~:text=El%20Uzi%20(en%20hebreo%2C%20%D7%A2%D7%95%D7%96%D7%99,el%20peso%20de%20los%20subfusiles." target="_blank" class="card-link">UZI</a>
 									  	</div>
 									</div>
 					      		</div>
@@ -1105,7 +1107,7 @@
 					<div class="p-3">
 						<img 
 						class="card-img-top" 
-						src="img/ar/scar-fn/scar-fn.jpg"
+						src="img/smg/vector/vector.jpg"
 						data-bs-toggle="modal" 
 						data-bs-target="#mimodal_9"
 						>
@@ -1125,13 +1127,13 @@
 										<div class="carousel slide carousel-dark border border-secondary" id="imagenes_9" data-bs-ride="carousel">
 											<div class="carousel-inner">
 												<div class="carousel-item active p-2">
-													<img class="d-block w-100" src="img/ar/scar-fn/scar-fna.jpg" alt="scar-fn-assault-rifle">
+													<img class="d-block w-100" src="img/smg/vector/vectora.jpg" alt="vector-submachine-gun">
 												</div>
 												<div class="carousel-item p-2">
-													<img class="d-block w-100" src="img/ar/scar-fn/scar-fnb.jpg" alt="scar-fn-assault-rifle">
+													<img class="d-block w-100" src="img/smg/vector/vectorb.jpg" alt="vector-submachine-gun">
 												</div>
 												<div class="carousel-item p-2">
-													<img class="d-block w-100" src="img/ar/scar-fn/scar-fnc.jpg" alt="scar-fn-assault-rifle">
+													<img class="d-block w-100" src="img/smg/vector/vectorc.jpg" alt="vector-submachine-gun">
 												</div>				
 											</div>
 											<!-- Controles izq -->
@@ -1177,7 +1179,7 @@
 					      			aria-expanded="false" 
 					      			aria-controls="contenido_8"
 					      		>
-					        		<h3 class="text">SCAR-FN</h3>
+					        		<h3 class="text">Vector</h3>
 					      		</button>
 					    	</h2>
 					    	<!-- Contenido -->
@@ -1192,18 +1194,18 @@
 									  	<!-- Card Body -->
 									  	<div class="card-body">
 									  		<!-- Texto -->
-									    	<p class="card-text">Fusil de asalto de combate para fuerzas especiales, fue diseñado y fabricado para SOCOM (USA).</p>
+									    	<p class="card-text">La Vektor SS-77 es una ametralladora de propósito general calibre 7,62 mm diseñada y fabricada por la empresa Denel Land Systems.</p>
 									  	</div>
 									  	<ul class="list-group list-group-flush">
 									  		<!-- Lista -->
-										    <li class="list-group-item">Dos calibres diferentes.</li>
-										    <li class="list-group-item">Remplazo para la carabina M4</li>
-										    <li class="list-group-item">Alcance efectivo: 600m.</li>
+										    <li class="list-group-item">600-900 disparos/minuto.</li>
+										    <li class="list-group-item">Calibre	7,62 mm.</li>
+										    <li class="list-group-item">Mini SS, recalibrada para 5,56 mm.</li>
 									  	</ul>
 									  	<div class="card-body">
 									  		<!-- Enlaces -->
-										    <a href="https://en.wikipedia.org/wiki/FN_SCAR" target="_blank" class="card-link">Fuente</a>
-										    <a href="https://www.youtube.com/watch?v=DAUIi05Rckc" target="_blank" class="card-link">SCAR-FN</a>
+										    <a href="https://www.wiki.es-es.nina.az/Vektor_SS-77.html" target="_blank" class="card-link">Fuente</a>
+										    <a href="https://es.wikipedia.org/wiki/Vektor_SS-77#:~:text=La%20Vektor%20SS%2D77%20es,(LIW)%20%2D%20de%20Sud%C3%A1frica." target="_blank" class="card-link">Vector</a>
 									  	</div>
 									</div>
 					      		</div>
