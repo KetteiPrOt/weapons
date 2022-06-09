@@ -70,156 +70,156 @@ let srcName1 =
 'colt'
 ,
 titleName1 =
-''
+'M1911'
 ,
 textContent1 =
-''
+'Pistola semiautomática, operada por retroceso directo. Fue el arma auxiliar de dotación del Ejército estadounidense desde 1911 hasta 1985.'
 ,
 wigContenta1 =
-''
+'Accion simple.'
 ,
 wigContentb1 =
-''
+'Cartucho .45 ACP.'
 ,
 wigContentc1 =
-''
+'Alcanze efectivo 50 m.'
 ,
 fuenteLink1 =
-''
+'https://es.wikipedia.org/wiki/M1911'
 ,
 armaLink1 =
-''
+'https://www.youtube.com/watch?v=GvQWGKxYujs'
 ;
 
 
 /* ----- ----- ----- ARMA: two ----- ----- ----- */
 let srcName2 = 
-''
+'browning'
 ,
 titleName2 =
-''
+'FN Browning GP-35'
 ,
 textContent2 =
-''
+'La Hi-Power es una de la pistolas militares más ampliamente utilizadas de todos los tiempos, habiendo sido usada por las fuerzas armadas de más de 50 países.'
 ,
 wigContenta2 =
-''
+'Accion simple.'
 ,
 wigContentb2 =
-''
+'Cartucho 9×19mm Parabellum.'
 ,
 wigContentc2 =
-''
+'Alcance efectivo 50 m.'
 ,
 fuenteLink2 =
-''
+'https://es.wikipedia.org/wiki/FN_Browning_GP-35'
 ,
 armaLink2 =
-''
+'https://youtu.be/XoUVW5ntlY8'
 ;
 
 
 /* ----- ----- ----- ARMA: three ----- ----- ----- */
 let srcName3 = 
-''
+'mauser'
 ,
 titleName3 =
-''
+'Mauser C96'
 ,
 textContent3 =
-'',
+'Con su cañón largo y su cartucho de alta velocidad, la Mauser C96 tenía un alcance superior y una mejor penetración que la mayoría de las otras pistolas de su época.',
 wigContenta3 =
-''
+'Recarga accionada por retroceso.'
 ,
 wigContentb3 =
-''
+'Cartucho 7,63x25 Mauser.'
 ,
 wigContentc3 =
-''
+'Alcance efectivo 40 m.'
 ,
 fuenteLink3 =
-''
+'https://es.wikipedia.org/wiki/Mauser_C96'
 ,
 armaLink3 =
-''
+'https://www.youtube.com/watch?v=zOS3dliHK_o'
 ;
 
 
 /* ----- ----- ----- ARMA: four ----- ----- ----- */
 let srcName4 = 
-''
+'parabellum'
 ,
 titleName4 =
-''
+'Parabellum'
 ,
 textContent4 =
-'',
+'Pistola semiautomática. El nombre Parabellum proviene de un antiguo refrán en latín: «Si vis pacem, para bellum», Si quieres la paz, prepárate para la guerra.',
 wigContenta4 =
-''
+'Recarga accionada por retroceso.'
 ,
 wigContentb4 =
-''
+'Municion 9x19 Parabellum.'
 ,
 wigContentc4 =
-''
+'Alcanze efectivo 40 m.'
 ,
 fuenteLink4 =
-''
+'https://es.wikipedia.org/wiki/Pistola_Parabellum'
 ,
 armaLink4 =
-''
+'https://youtu.be/LM99zgWksm8'
 ;
 
 
 /* ----- ----- ----- ARMA: five ----- ----- ----- */
 let srcName5 = 
-''
+'smithwesson'
 ,
 titleName5 =
-''
+'Smith & Wesson Model 10'
 ,
 textContent5 =
-'',
+'Es un revólver K-frame de popularidad mundial. Desde 1899 se han producido unos 6.000.000 de este tipo a lo largo de los años, lo que la convierte en la pistola más popular del siglo XX.',
 wigContenta5 =
-''
+'Doble accion.'
 ,
 wigContentb5 =
-''
+'Varios modelos de calibre.'
 ,
 wigContentc5 =
-''
+'Tambor de 6 cartuchos.'
 ,
 fuenteLink5 =
-''
+'https://en.wikipedia.org/wiki/Smith_%26_Wesson_Model_10'
 ,
 armaLink5 =
-''
+'https://youtu.be/lGcr5JsYcW0'
 ;
 
 
 /* ----- ----- ----- ARMA: six ----- ----- ----- */
 let srcName6 = 
-''
+'glock'
 ,
 titleName6 =
-''
+'Glock 18'
 ,
 textContent6 =
-'',
+'Glock «Safe Action» Pistol, es una serie de pistolas semiautomáticas, o automáticas en el caso de la Glock 18, producidas por Glock Ges.m.b.H. en Austria.',
 wigContenta6 =
-''
+'Semiautomatia y Automatica.'
 ,
 wigContentb6 =
-''
+'Alcance efectivo 50 m.'
 ,
 wigContentc6 =
-''
+'Municion 9×19 mm Parabellum.'
 ,
 fuenteLink6 =
-''
+'https://es.wikipedia.org/wiki/Glock#Glock_18'
 ,
 armaLink6 =
-''
+'https://youtu.be/6j-93BOagCk'
 ;
 
 
