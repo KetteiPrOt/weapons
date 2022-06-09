@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="style.css">
 	<script src="js/script.js" defer></script>
 	<script src="js/handgun.js" defer></script>
+	<script src="js/updateLink.js" defer></script>
 </head>
 <body>
 
@@ -62,7 +63,7 @@
 						          	<div class="dropdown-menu">
 							            <a class="dropdown-item" href="handgun.html">Hand Gun</a>
 							            <div class="dropdown-divider"></div>
-							            <a class="dropdown-item" href="info.html">info</a>
+							            <a class="dropdown-item" id="info" href="info.html">info</a>
 						          	</div>
 						        </li>
 						    </ul>
@@ -871,7 +872,7 @@
 
 		</div>
 
-		<div class="row mb-3">
+		<div class="row mb-3 ocultar">
 
 			<div class="col-12 col-sm-6 col-md-4">
 				<!-- Banner de arma -->
@@ -1224,7 +1225,7 @@
 			<div class="col-auto">
 				<h3 class="lead ms-2">Joel Mero</h3>
 				<a href="#" class="btn btn-link">Acerca de</a>
-				<a href="#" class="btn btn-link">Contacto</a>
+				<a href="#" id="contacto" class="btn btn-link">Contacto</a>
 			</div>
 			<div class="col-auto">
 				<a href="#" class="btn btn-link">Subir en pagina</a>
