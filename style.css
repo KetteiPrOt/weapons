@@ -1,3 +1,13 @@
+.card:hover {
+	border: 1px solid #8e8c84;
+	border-radius: 5px;
+}
+
+.accordion-header:hover {
+	border: 1px solid #8e8c84;
+	border-radius: 5px;
+}
+
 .titulo {
 	background: rgba(255,255,255,.6);
 	border-radius: 5px;
